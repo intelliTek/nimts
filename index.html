@@ -1,26 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html>
-  <head>
-    <title>InAppBrowser.addEventListener Example</title>
 
-    <script type="text/javascript" charset="utf-8" src="cordova-2.3.0.js"></script>
-    <script type="text/javascript" charset="utf-8">
+	<head>
 
-    // Wait for Cordova to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
+		<title>tittle</title>
 
-    // Cordova is ready
-    //
-    function onDeviceReady() {
-         var ref = window.open('http://nimts.studyfellow.com', '_blank', 'location=yes');
-         ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
-         ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
-         ref.addEventListener('exit', function() { alert(event.type); });
-    }
+		<script>
 
-    </script>
-  </head>
-  <body>
-  </body>
+			// window.location='http://nimts.studyfellow.com/';
+
+      window.open('http://nimts.studyfellow.com', '_blank', 'location=yes');
+		</script>
+
+	<body>		
+		<!-- <a href="http://studyfellow.com/nimts/">NIMTS</a> -->
+	</body>
+
 </html>
+
